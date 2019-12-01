@@ -56,8 +56,12 @@ fetch("https://api.jikan.moe/v3/search/anime?q=boku no hero academia&limit=10")
                 document.getElementById("data").innerHTML +=    `<a href="index.html" class="back">Back</a>
                                                                 <div class="oneAnime">
                                                                     <h2>${data.title}</h2>
-                                                                    <a href="Characters.html">characters</a>
-                                                                    <iframe class="ytVideo" src=${yt_url} frameborder="0"></iframe>
+                                                                    <nav class="menuAnime">
+                                                                        <ul>
+                                                                            <li><a href="Characters.html?${data.mal_id}">Characters</a></li>
+                                                                            <li><a href="Characters.html?${data.mal_id}">Characters</a></li>
+                                                                        </ul>
+                                                                    </nav>
                                                                     <div class="infoPosition">
                                                                         <div class="details1">
                                                                             <img src=${data.image_url}>
@@ -66,6 +70,7 @@ fetch("https://api.jikan.moe/v3/search/anime?q=boku no hero academia&limit=10")
                                                                             <p><b>Synopsis</b> <hr class="divide"/>${(data.synopsis === null)?"Próximamente.":data.synopsis}</p>
                                                                         </div>
                                                                     </div>
+                                                                    <iframe class="ytVideo" src=${yt_url} frameborder="0"></iframe>
                                                                 </div>`;
             })
             .catch(err => console.log("Error "+ err))

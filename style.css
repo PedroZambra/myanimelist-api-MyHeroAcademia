@@ -22,36 +22,20 @@ header > h1 {
     font-variant: small-caps;
 }
 
-#menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 #data {
     width: 90%;
     margin: auto;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-a:active {
-    color: #FED807;
 }
 
 /* ANIMES */
 
 .anime {
     display: flex;
-    
+
     width: auto;
     height: 315px;
-    border-inline-end: 2px solid #000; 
-    border-inline-start: 2px solid #000; 
+    border-inline-end: 2px solid #000;
+    border-inline-start: 2px solid #000;
     border-block-end: 2px solid #000;
     background-color: #FFF;
     cursor: pointer;
@@ -62,7 +46,7 @@ a:active {
 }
 
 .anime:first-child {
-    border-top: 2px solid #000; 
+    border-top: 2px solid #000;
 }
 
 .anime:hover {
@@ -70,7 +54,7 @@ a:active {
     transform: scale(1.05);
     box-shadow: 0px 0px 5px #000;
     transition: all 0.5s;
-        
+
     z-index: 1;
 }
 
@@ -87,6 +71,35 @@ a:active {
     margin-top: 25px;
 }
 
+.menuAnime {
+    margin-top: 20px;
+ }
+
+.menuAnime ul {
+    list-style: none;
+}
+
+.menuAnime ul li{
+    float:left;
+    text-align:center;
+}
+
+.menuAnime li a{
+    display:block;
+    padding: 10px 20px;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: #000;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.menuAnime li a:hover{
+    background-color:#000;
+    color:#FFF;
+    box-shadow: 1px 1px 3px black;
+}
 /*ONE ANIME*/
 
 .oneAnime {
@@ -117,6 +130,7 @@ a:active {
 }
 
 .details2{
+    width: 100%;
     padding: 20px;
 }
 
@@ -130,8 +144,10 @@ a:active {
 .back {
     position: absolute;
     top: 150px;
+    left: 10%;
     color: #FFF;
     font-size: 25px;
+    text-decoration: none;
 }
 
 /*Characters*/
