@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #E0E0E0;
+}
+
+header {
+    height: 200px;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    line-height: 200px;
+    box-shadow: 2px 2px 5px #000;
+}
+
+header > h1 {
+    text-shadow: 1px 1px 4px #FFF;
+    font-variant: small-caps;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#data {
+    width: 90%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:active {
+    color: #FED807;
+}
+
+/* ANIMES */
+
+.anime {
+    display: flex;
+    
+    width: auto;
+    height: 315px;
+    border-inline-end: 2px solid #000; 
+    border-inline-start: 2px solid #000; 
+    border-block-end: 2px solid #000;
+    background-color: #FFF;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    position: relative;
+    z-index: 0;
+}
+
+.anime:first-child {
+    border-top: 2px solid #000; 
+}
+
+.anime:hover {
+    /* transform: translate(5px); */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px #000;
+    transition: all 0.5s;
+        
+    z-index: 1;
+}
+
+.picture {
+    width: 220px;
+    height: 315px;
+}
+
+.info {
+    padding: 20px;
+}
+
+.info > p {
+    margin-top: 25px;
+}
+
+/*ONE ANIME*/
+
+.oneAnime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.ytVideo {
+    width: 640px;
+    height: 360px;
+    margin: 20px;
+}
+
+.infoPosition {
+    display: flex;
+    width: 100%;
+}
+
+.details1{
+    padding-top: 20px ;
+}
+
+.details1 > img{
+    box-shadow: 1px 1px 3px #000 ;
+}
+
+.details2{
+    padding: 20px;
+}
+
+.divide {
+    margin: 10px 0;
+    /* background-color: #000;
+    height: 1px;
+    border: none; */
+}
+
+.back {
+    position: absolute;
+    top: 150px;
+    color: #FFF;
+    font-size: 25px;
+}
+
+/*Characters*/
+
+#dataCharacters {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.character {
+    text-align: center;
+    margin: 5px;
+}
+
+/*********************/
+
+footer {
+    height: 100px;
+    line-height: 100px;
+    background-color: #000;
+    text-align: center;
+    color: #FFF;
+}
+
+.bottomFooter {
+    min-height: calc(100vh - 300px);
+}
