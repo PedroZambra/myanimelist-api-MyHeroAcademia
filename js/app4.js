@@ -8,7 +8,7 @@ fetch("https://api.jikan.moe/v3/anime/"+anime_id+"/news")
     for(let i=0; i<data.articles.length; i++) {
         document.getElementById("dataNews").innerHTML +=   `<div class="new">
                                                                 <h3 class="title_new">${data.articles[i].title}</h3>
-                                                                <a href="${data.articles[i].url}" target="blank"><img src=${data.articles[i].image_url} class="img_news"></a>
+                                                                <a href="${data.articles[i].url}" target="blank"><img data-src=${data.articles[i].image_url} class="img_news lazyload"></a>
                                                                 <p>${data.articles[i].intro}</p>
                                                             </div>
                                                             <hr/>`

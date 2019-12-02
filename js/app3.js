@@ -8,6 +8,7 @@ fetch("https://api.jikan.moe/v3/anime/"+anime_id+"/episodes")
     for(let i=0; i<data.episodes.length; i++) {
         document.getElementById("dataEpisodes").innerHTML +=   `<div>
                                                                     <p><b>${data.episodes[i].episode_id}.</b> ${data.episodes[i].title}</p>
+                                                                    <hr/>
                                                                 </div>`
     }
 })
