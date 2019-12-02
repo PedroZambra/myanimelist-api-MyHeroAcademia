@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #E0E0E0;
+    /* background-color: #F7F7F7; */
 }
 
 header {
@@ -22,9 +22,18 @@ header > h1 {
     font-variant: small-caps;
 }
 
-#data {
+#data, #dataAnime, #dataNews {
     width: 90%;
     margin: auto;
+}
+
+.back {
+    position: absolute;
+    top: 150px;
+    left: 10%;
+    color: #FFF;
+    font-size: 30px;
+    text-decoration: none;
 }
 
 /* ANIMES */
@@ -34,10 +43,6 @@ header > h1 {
 
     width: auto;
     height: 315px;
-    border-inline-end: 2px solid #000;
-    border-inline-start: 2px solid #000;
-    border-block-end: 2px solid #000;
-    background-color: #FFF;
     cursor: pointer;
     transition: all 0.5s;
 
@@ -45,14 +50,9 @@ header > h1 {
     z-index: 0;
 }
 
-.anime:first-child {
-    border-top: 2px solid #000;
-}
-
 .anime:hover {
-    /* transform: translate(5px); */
     transform: scale(1.05);
-    box-shadow: 0px 0px 5px #000;
+    box-shadow: 0px 0px 3px #000;
     transition: all 0.5s;
 
     z-index: 1;
@@ -61,9 +61,11 @@ header > h1 {
 .picture {
     width: 220px;
     height: 315px;
+    box-shadow: 2px 2px 3px #000;
 }
 
 .info {
+    width: 100%;
     padding: 20px;
 }
 
@@ -141,16 +143,7 @@ header > h1 {
     border: none; */
 }
 
-.back {
-    position: absolute;
-    top: 150px;
-    left: 10%;
-    color: #FFF;
-    font-size: 25px;
-    text-decoration: none;
-}
-
-/*Characters*/
+/*CHARACTERS*/
 
 #dataCharacters {
     width: 90%;
@@ -163,6 +156,37 @@ header > h1 {
 .character {
     text-align: center;
     margin: 5px;
+}
+
+/*EPISODES*/
+
+#dataEpisodes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*NEWS*/
+
+.new {
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_new {
+    text-align: center;
+}
+
+.img_news {
+    width: 225px;
+    height: 320px;
+    margin: 20px 0;
+    box-shadow: 1px 1px 3px #000 ;
 }
 
 /*********************/
